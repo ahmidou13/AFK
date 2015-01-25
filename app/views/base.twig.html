@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>{% block title %}{% endblock %} - AFK</title>
+        <meta charset="UTF-8">
+
+		{% block head %}
+			<link rel="icon" href="/favicon.ico">
+			<link href='//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+			<link rel="stylesheet" href="/assets/css/style.css">
+		{% endblock%}
+
+    </head>
+    <body>
+		{% block navbar%}
+			<nav>
+				{% if loggedIn() %}
+					<div class="nav-user-image">
+						<span class="nav-user-name">{{ loggedUser() }}</span>
+					</div>
+				{% endif %}
+				<a href="{{ url('/home') }}"><i class="fa fa-home"></i>
+					<span>Accueil</span></a>
+
+				{% if loggedIn() %}
+					<a href="{{ url('/profile/' ~ loggedUser()) }}"><i class="fa fa-user"></i>
+						<span>Profil</span></a>
+					<a href="{{ url('/message') }}"><i class="fa fa-comment"></i>
+						<span>Messages</span></a>
+				{% else %}
+						<a href="{{ url('/login') }}"><i class="fa fa-sign-in"></i>
+							<span>Connexion</span></a>
+				{% endif %}
+					<a href="{{ url('/search') }}"><i class="fa fa-search"></i>
+						<span>Rechercher</span></a>
+				{% if loggedIn() %}
+					<a href="{{ url('/logout') }}"><i class="fa fa-sign-out"></i>
+						<span>Déconnexion</span></a>
+				{% endif %}
+
+			</nav>
+		{% endblock%}
+        <div id="container-main">
+            <div class="clearfix home">
+
+                {% block content %}{% endblock %}
+
+            </div>
+        </div>
+		{% block footer %}
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/bootstrap.min.js"></script>
+			</script>
+		{% endblock %}
+    </body>
+</html>
+

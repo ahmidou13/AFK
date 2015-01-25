@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+#container-main a
+{
+	color: black;
+	text-decoration: none;
+}
+
+.user-actions
+{
+	width: 40%;
+	text-shadow: 0 0 16px #fff, 0 0 16px #fff;
+}
+
+.user-action
+{
+	font-size: 1.5em;
+	text-align: right;
+	margin-right: 16px;
+}
+
+.user-cover
+{
+	height: 320px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url('http://cdn03.androidauthority.net/wp-content/uploads/2012/06/wallpaper_03.jpg');
+	box-shadow: 0 0 12px #000;
+}
+
+.user-info
+{
+	width: 100%;
+	display: inline-flex;
+	padding-top: 32px;
+	padding-left: 32px;
+}
+
+.user-name-box
+{
+	margin-left: 32px;
+	width: 40%;
+}
+
+.user-image
+{
+	min-width: 192px;
+	min-height: 192px;
+	max-width: 192px;
+	max-height: 192px;
+	box-shadow: 0 0 48px -10px #111;
+	border-radius: 192px;
+	background-size: cover;
+	background-image: url('/self/ppic');
+}
+
+#container-main h1
+{
+	text-shadow: 0 0 16px #fff, 0 0 16px #fff;
+	display: inline-block;
+}
+
+#container-main i
+{
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+.afk-col
+{
+	margin: 24px;
+	box-shadow: 0 0 48px -16px black;
+	border-radius: 2px;
+	padding: 0;
+	background-color: #eee;
+}
+
+.user-pic
+{
+	float: left;
+}
+
+.user-pic > a
+{
+	min-width: 64px;
+	min-height: 64px;
+}
+
+.user-pic > a > img
+{
+	width: 64px;
+	height: 64px;
+	border-radius: 64px;
+	box-shadow: 0 0 12px -4px black;
+	margin-bottom: 15px;
+}
+
+.user-info-box > p
+{
+	margin-left: 15px;
+}
+
+.user-content p
+{
+	margin-left: 78px;
+}

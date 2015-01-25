@@ -1,0 +1,51 @@
+html
+{
+	font: normal 14px Roboto,arial,sans-serif;
+}
+
+body
+{
+	background-image: url('/assets/img/geek.png');
+	color: white;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
+}
+
+
+#form-login
+{
+    background-color: #EDEDED;
+    color : black;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin: auto;
+    border-color:#d2d2d2;
+    border-width: 3px;
+    box-shadow:0 1px 0 #cfcfcf;
+}
+
+#form-login, #form-suscribe{
+    background-color: #EDEDED;
+    border-color:#d2d2d2;
+}
+
+label > input[type=file]
+{
+	display: none;
+}
+
+.event-form
+{
+	color: #111;
+}
+
+#container-main
+{
+	padding-top: 150px;
+}
